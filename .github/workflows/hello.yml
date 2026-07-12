@@ -1,0 +1,29 @@
+# A workflow run is made up of one or more jobs
+name: Hello
+
+#runs on a trigger
+on:
+  push:
+    branches:
+      - main
+      
+# these jobs are inside the workflow and run on based on dependencies
+jobs:
+  greet: null
+
+  #this is a github runner/each job runs on a runner
+  runs-on: ubuntu-latest
+  steps:
+    - name: say hello to users
+      run: echo "Hello"
+      
+    - name: say hello to username
+      run: echo "Hello $USER"
+
+
+
+
+
+
+
+  
