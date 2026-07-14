@@ -30,7 +30,7 @@ jobs:
 
       # static code artifacts are stored in the pages build directory
       - name: Upload static files
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v4
         with:
           name: pages-build
           path: .
