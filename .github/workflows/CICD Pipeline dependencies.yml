@@ -1,0 +1,27 @@
+name: CICD Pipeline dependencies
+on:
+  workflow_dispatch:
+jobs: 
+  code:
+    runs-on: ubuntu-latest
+    steps:
+     - name: checkout code
+       run: echo "code clone from github"
+  build:
+    needs: [code]  
+    runs-on: ubuntu-latest
+    steps:
+     - name: Build docker container
+       run: echo " Docker container build"
+  test:
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+     - name: test the container
+       run: echo "Testing the container"
+  deploy:
+    needs: [test,build] 
+    runs-on: ubuntu-latest
+    steps:
+     - name: delpoying the app
+       run: echo "docker compose deploy the app"
