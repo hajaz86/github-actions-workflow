@@ -26,14 +26,14 @@ jobs:
 
       # setup github pages
       - name: Setup GitHub Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
       # static code artifacts are stored in the pages build directory
-      - name: Upload static files
+      - name: Upload pages Artifact
+        id: upload-pages-artifact   
         uses: actions/upload-pages-artifact@v3
         with:
-          name: pages-build
-          path: .
+          path: "."
 
       # deploy to github pages
       - name: Deploy to GitHub Pages
