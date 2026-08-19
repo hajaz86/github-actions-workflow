@@ -1,501 +1,1641 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-<title>Humaira Aijaz | Senior Program & DevOps Cloud Delivery Manager</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta
+        name="description"
+        content="Humaira – Senior Technical Program Manager specializing in Data and AI Platform Delivery, GenAI, RAG, MLOps, LLMOps, Cloud and DevSecOps."
+    >
 
-<style>
+    <title>
+        Humaira | Senior Technical Program Manager – Data & AI Platform Delivery
+    </title>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
+    <style>
+        :root {
+            --background: #07101f;
+            --background-light: #0d1b32;
+            --card: rgba(17, 32, 57, 0.82);
+            --card-hover: rgba(22, 43, 76, 0.96);
+            --border: rgba(148, 187, 255, 0.17);
+            --text: #f7f9ff;
+            --muted: #b7c2d8;
+            --primary: #64b5ff;
+            --secondary: #8c7bff;
+            --accent: #4ce0c1;
+            --gold: #f4c86b;
+            --shadow: 0 25px 70px rgba(0, 0, 0, 0.32);
+            --radius: 24px;
+        }
 
-html{
-    scroll-behavior:smooth;
-}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-body{
-    background:linear-gradient(135deg,#0f172a,#111827,#1e293b);
-    color:white;
-    overflow-x:hidden;
-}
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
 
-body::before{
-    content:'';
-    position:fixed;
-    width:600px;
-    height:600px;
-    background:#3b82f6;
-    filter:blur(180px);
-    opacity:.25;
-    top:-200px;
-    left:-150px;
-    z-index:-1;
-}
+        body {
+            min-height: 100vh;
+            overflow-x: hidden;
+            color: var(--text);
+            background:
+                radial-gradient(
+                    circle at 12% 8%,
+                    rgba(74, 144, 255, 0.18),
+                    transparent 33%
+                ),
+                radial-gradient(
+                    circle at 88% 22%,
+                    rgba(140, 123, 255, 0.15),
+                    transparent 30%
+                ),
+                linear-gradient(
+                    145deg,
+                    var(--background),
+                    #081426 55%,
+                    #0a1425
+                );
+            font-family:
+                Inter, "Segoe UI", Arial, sans-serif;
+            line-height: 1.6;
+        }
 
-body::after{
-    content:'';
-    position:fixed;
-    width:500px;
-    height:500px;
-    background:#8b5cf6;
-    filter:blur(180px);
-    opacity:.2;
-    right:-100px;
-    bottom:-100px;
-    z-index:-1;
-}
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            pointer-events: none;
+            background-image:
+                linear-gradient(
+                    rgba(255, 255, 255, 0.018) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(255, 255, 255, 0.018) 1px,
+                    transparent 1px
+                );
+            background-size: 56px 56px;
+            mask-image: linear-gradient(
+                to bottom,
+                black,
+                transparent 85%
+            );
+        }
 
-.navbar{
-    position:fixed;
-    width:100%;
-    top:0;
-    z-index:1000;
-    backdrop-filter:blur(20px);
-    background:rgba(255,255,255,.05);
-    border-bottom:1px solid rgba(255,255,255,.1);
-}
+        a {
+            color: inherit;
+        }
 
-.nav-container{
-    width:90%;
-    margin:auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 0;
-}
+        img {
+            display: block;
+            max-width: 100%;
+        }
 
-.logo{
-    font-size:24px;
-    font-weight:700;
-}
+        button {
+            font: inherit;
+        }
 
-.nav-links{
-    display:flex;
-    gap:30px;
-}
+        .container {
+            width: min(1180px, 90%);
+            margin-inline: auto;
+        }
 
-.nav-links a{
-    text-decoration:none;
-    color:white;
-    transition:.3s;
-}
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            width: 100%;
+            border-bottom: 1px solid var(--border);
+            background: rgba(7, 16, 31, 0.82);
+            backdrop-filter: blur(18px);
+        }
 
-.nav-links a:hover{
-    color:#60a5fa;
-}
+        .nav-container {
+            min-height: 74px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
 
-section{
-    padding:100px 10%;
-}
+        .logo {
+            text-decoration: none;
+            font-size: 1.35rem;
+            font-weight: 800;
+            letter-spacing: 0.02em;
+        }
 
-.glass{
-    background:rgba(255,255,255,.08);
-    backdrop-filter:blur(15px);
-    border:1px solid rgba(255,255,255,.15);
-    border-radius:25px;
-}
+        .logo span {
+            color: var(--primary);
+        }
 
-.hero{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            list-style: none;
+        }
 
-.hero-content{
-    text-align:center;
-    max-width:1000px;
-}
+        .nav-links a {
+            position: relative;
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 0.93rem;
+            font-weight: 600;
+            transition: color 0.25s ease;
+        }
 
-.hero h1{
-    font-size:65px;
-    margin-bottom:20px;
-}
+        .nav-links a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -7px;
+            width: 0;
+            height: 2px;
+            border-radius: 10px;
+            background: var(--primary);
+            transition: width 0.25s ease;
+        }
 
-.hero span{
-    background:linear-gradient(to right,#60a5fa,#c084fc);
-    background-clip:text;
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-}
+        .nav-links a:hover {
+            color: var(--text);
+        }
 
-.hero p{
-    font-size:20px;
-    line-height:1.8;
-    color:#d1d5db;
-}
+        .nav-links a:hover::after {
+            width: 100%;
+        }
 
-.btn{
-    display:inline-block;
-    margin-top:35px;
-    padding:15px 35px;
-    border-radius:50px;
-    text-decoration:none;
-    color:white;
-    background:linear-gradient(135deg,#2563eb,#7c3aed);
-    transition:.4s;
-}
+        .menu-button {
+            display: none;
+            width: 44px;
+            height: 42px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            color: var(--text);
+            background: var(--card);
+            cursor: pointer;
+        }
 
-.btn:hover{
-    transform:translateY(-5px);
-}
+        section {
+            padding: 105px 0;
+        }
 
-.section-title{
-    text-align:center;
-    font-size:42px;
-    margin-bottom:50px;
-}
+        .hero {
+            min-height: 100vh;
+            padding-top: 135px;
+            display: flex;
+            align-items: center;
+        }
 
-.about-card{
-    padding:40px;
-}
+        .hero-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
+            align-items: center;
+            gap: 70px;
+        }
 
-.about-card p{
-    line-height:2;
-    color:#d1d5db;
-}
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 22px;
+            padding: 9px 15px;
+            border: 1px solid rgba(100, 181, 255, 0.28);
+            border-radius: 999px;
+            color: #cce8ff;
+            background: rgba(100, 181, 255, 0.08);
+            font-size: 0.8rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
 
-.skills-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-}
+        .eyebrow::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent);
+            box-shadow: 0 0 18px var(--accent);
+        }
 
-.skill-card{
-    padding:30px;
-    transition:.4s;
-}
+        .hero h1 {
+            max-width: 850px;
+            margin-bottom: 24px;
+            font-size: clamp(2.9rem, 6vw, 5.5rem);
+            line-height: 1.02;
+            letter-spacing: -0.055em;
+        }
 
-.skill-card:hover{
-    transform:translateY(-8px);
-}
+        .gradient-text {
+            color: transparent;
+            background:
+                linear-gradient(
+                    100deg,
+                    var(--primary),
+                    #9e8bff 55%,
+                    var(--accent)
+                );
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
 
-.skill-card h3{
-    margin-bottom:15px;
-    color:#60a5fa;
-}
+        .hero-description {
+            max-width: 790px;
+            color: var(--muted);
+            font-size: clamp(1.02rem, 1.6vw, 1.2rem);
+        }
 
-.timeline{
-    position:relative;
-}
+        .specialization-list {
+            margin-top: 27px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
 
-.timeline::before{
-    content:'';
-    position:absolute;
-    left:50%;
-    width:2px;
-    height:100%;
-    background:#60a5fa;
-}
+        .specialization-list span {
+            padding: 9px 13px;
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            color: #dce7f8;
+            background: rgba(255, 255, 255, 0.045);
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
 
-.timeline-item{
-    width:50%;
-    padding:20px 40px;
-    position:relative;
-}
+        .hero-buttons {
+            margin-top: 33px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
 
-.timeline-item:nth-child(odd){
-    left:0;
-}
+        .button {
+            min-height: 50px;
+            padding: 13px 23px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid transparent;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: 800;
+            transition:
+                transform 0.25s ease,
+                border-color 0.25s ease,
+                background 0.25s ease;
+        }
 
-.timeline-item:nth-child(even){
-    left:50%;
-}
+        .button:hover {
+            transform: translateY(-3px);
+        }
 
-.timeline-content{
-    padding:25px;
-}
+        .button-primary {
+            color: #07101f;
+            background:
+                linear-gradient(
+                    120deg,
+                    var(--primary),
+                    var(--accent)
+                );
+            box-shadow: 0 16px 35px rgba(76, 224, 193, 0.16);
+        }
 
-.timeline-content h3{
-    color:#60a5fa;
-}
+        .button-secondary {
+            border-color: var(--border);
+            color: var(--text);
+            background: rgba(255, 255, 255, 0.045);
+        }
 
-.timeline-content p{
-    margin-top:10px;
-    color:#d1d5db;
-}
+        .profile-area {
+            position: relative;
+            width: min(100%, 390px);
+            margin-inline: auto;
+        }
 
-.certifications{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
+        .profile-area::before {
+            content: "";
+            position: absolute;
+            inset: 30px -25px -25px 25px;
+            z-index: -1;
+            border-radius: 32px;
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(100, 181, 255, 0.33),
+                    rgba(140, 123, 255, 0.22),
+                    rgba(76, 224, 193, 0.22)
+                );
+            filter: blur(25px);
+        }
 
-.cert-card{
-    padding:25px;
-    text-align:center;
-}
+        .profile-card {
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 32px;
+            background: var(--card);
+            box-shadow: var(--shadow);
+        }
 
-.contact-card{
-    text-align:center;
-    padding:50px;
-}
+        .profile-photo {
+            width: 100%;
+            aspect-ratio: 720 / 747;
+            object-fit: cover;
+            object-position: center top;
+            background: white;
+        }
 
-.contact-card p{
-    margin:10px 0;
-}
+        .profile-caption {
+            padding: 22px;
+            text-align: center;
+        }
 
-footer{
-    text-align:center;
-    padding:25px;
-    color:#9ca3af;
-}
+        .profile-caption strong {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.35rem;
+        }
 
-.hidden{
-    opacity:0;
-    transform:translateY(50px);
-    transition:all 1s ease;
-}
+        .profile-caption span {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
 
-.show{
-    opacity:1;
-    transform:translateY(0);
-}
+        .metrics {
+            margin-top: 70px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            background: rgba(255, 255, 255, 0.035);
+            box-shadow: var(--shadow);
+        }
 
-@media(max-width:900px){
+        .metric {
+            padding: 25px 22px;
+            text-align: center;
+        }
 
-.hero h1{
-font-size:42px;
-}
+        .metric:not(:last-child) {
+            border-right: 1px solid var(--border);
+        }
 
-.timeline::before{
-left:10px;
-}
+        .metric strong {
+            display: block;
+            margin-bottom: 4px;
+            color: var(--primary);
+            font-size: 1.8rem;
+        }
 
-.timeline-item{
-width:100%;
-left:0 !important;
-padding-left:40px;
-}
-}
+        .metric span {
+            color: var(--muted);
+            font-size: 0.84rem;
+        }
 
-</style>
+        .section-heading {
+            max-width: 760px;
+            margin: 0 auto 50px;
+            text-align: center;
+        }
+
+        .section-heading .label {
+            display: block;
+            margin-bottom: 11px;
+            color: var(--accent);
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+
+        .section-heading h2 {
+            margin-bottom: 15px;
+            font-size: clamp(2.1rem, 4vw, 3.3rem);
+            line-height: 1.13;
+            letter-spacing: -0.035em;
+        }
+
+        .section-heading p {
+            color: var(--muted);
+            font-size: 1rem;
+        }
+
+        .panel {
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            background: var(--card);
+            box-shadow: var(--shadow);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .about-panel {
+            padding: 34px;
+        }
+
+        .about-panel h3 {
+            margin-bottom: 15px;
+            color: var(--primary);
+            font-size: 1.25rem;
+        }
+
+        .about-panel p {
+            color: var(--muted);
+        }
+
+        .about-panel p + p {
+            margin-top: 15px;
+        }
+
+        .highlight-list {
+            display: grid;
+            gap: 15px;
+            list-style: none;
+        }
+
+        .highlight-list li {
+            position: relative;
+            padding-left: 27px;
+            color: var(--muted);
+        }
+
+        .highlight-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--accent);
+            font-weight: 900;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .skill-card {
+            min-height: 225px;
+            padding: 29px;
+            transition:
+                transform 0.25s ease,
+                background 0.25s ease,
+                border-color 0.25s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-7px);
+            border-color: rgba(100, 181, 255, 0.42);
+            background: var(--card-hover);
+        }
+
+        .skill-number {
+            width: 42px;
+            height: 42px;
+            margin-bottom: 20px;
+            display: grid;
+            place-items: center;
+            border-radius: 12px;
+            color: #07101f;
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--primary),
+                    var(--accent)
+                );
+            font-weight: 900;
+        }
+
+        .skill-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.15rem;
+        }
+
+        .skill-card p {
+            color: var(--muted);
+            font-size: 0.92rem;
+        }
+
+        .delivery-flow {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+        }
+
+        .delivery-step {
+            position: relative;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        .delivery-step:not(:last-child)::after {
+            content: "→";
+            position: absolute;
+            top: 45px;
+            right: -13px;
+            z-index: 3;
+            color: var(--primary);
+            font-size: 1.35rem;
+            font-weight: 900;
+        }
+
+        .step-number {
+            width: 44px;
+            height: 44px;
+            margin: 0 auto 17px;
+            display: grid;
+            place-items: center;
+            border: 1px solid rgba(100, 181, 255, 0.38);
+            border-radius: 50%;
+            color: var(--primary);
+            background: rgba(100, 181, 255, 0.08);
+            font-weight: 900;
+        }
+
+        .delivery-step h3 {
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+
+        .delivery-step p {
+            color: var(--muted);
+            font-size: 0.82rem;
+        }
+
+        .outcomes-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .outcome-card {
+            padding: 28px;
+        }
+
+        .outcome-card strong {
+            display: block;
+            margin-bottom: 10px;
+            color: var(--gold);
+            font-size: 2rem;
+        }
+
+        .outcome-card h3 {
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .outcome-card p {
+            color: var(--muted);
+            font-size: 0.88rem;
+        }
+
+        .case-study {
+            padding: 42px;
+        }
+
+        .case-study-header {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 25px;
+        }
+
+        .case-study-header h3 {
+            max-width: 700px;
+            margin-bottom: 10px;
+            font-size: clamp(1.6rem, 3vw, 2.25rem);
+        }
+
+        .case-study-header p {
+            max-width: 770px;
+            color: var(--muted);
+        }
+
+        .status {
+            flex-shrink: 0;
+            padding: 8px 13px;
+            border: 1px solid rgba(76, 224, 193, 0.3);
+            border-radius: 999px;
+            color: var(--accent);
+            background: rgba(76, 224, 193, 0.08);
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+        }
+
+        .case-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+
+        .case-item {
+            padding: 20px;
+            border: 1px solid var(--border);
+            border-radius: 17px;
+            background: rgba(255, 255, 255, 0.035);
+        }
+
+        .case-item span {
+            display: block;
+            margin-bottom: 7px;
+            color: var(--primary);
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .case-item p {
+            color: var(--muted);
+            font-size: 0.87rem;
+        }
+
+        .tools-list {
+            margin-top: 27px;
+            padding-top: 25px;
+            border-top: 1px solid var(--border);
+        }
+
+        .tools-list h4 {
+            margin-bottom: 13px;
+        }
+
+        .tools-list div {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+        }
+
+        .tools-list span {
+            padding: 7px 11px;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            color: var(--muted);
+            background: rgba(255, 255, 255, 0.035);
+            font-size: 0.8rem;
+        }
+
+        .credentials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .credential {
+            padding: 27px;
+        }
+
+        .credential h3 {
+            margin-bottom: 9px;
+            color: var(--primary);
+        }
+
+        .credential p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        .contact-panel {
+            padding: 50px;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .contact-panel h2 {
+            margin-bottom: 15px;
+            font-size: clamp(2rem, 4vw, 3.1rem);
+            line-height: 1.15;
+        }
+
+        .contact-panel p {
+            color: var(--muted);
+        }
+
+        .contact-links {
+            display: grid;
+            gap: 13px;
+        }
+
+        .contact-links a {
+            padding: 14px 17px;
+            border: 1px solid var(--border);
+            border-radius: 13px;
+            color: var(--text);
+            background: rgba(255, 255, 255, 0.04);
+            text-decoration: none;
+            font-weight: 700;
+            transition:
+                border-color 0.25s ease,
+                transform 0.25s ease;
+        }
+
+        .contact-links a:hover {
+            transform: translateX(4px);
+            border-color: var(--primary);
+        }
+
+        footer {
+            padding: 28px 0;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition:
+                opacity 0.8s ease,
+                transform 0.8s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 1000px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-copy {
+                text-align: center;
+            }
+
+            .hero-description {
+                margin-inline: auto;
+            }
+
+            .specialization-list,
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .profile-area {
+                max-width: 350px;
+            }
+
+            .metrics,
+            .outcomes-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .metric:nth-child(2) {
+                border-right: none;
+            }
+
+            .metric:nth-child(-n + 2) {
+                border-bottom: 1px solid var(--border);
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .delivery-flow {
+                grid-template-columns: 1fr;
+            }
+
+            .delivery-step:not(:last-child)::after {
+                content: "↓";
+                top: auto;
+                right: 50%;
+                bottom: -16px;
+                transform: translateX(50%);
+            }
+
+            .case-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 760px) {
+            section {
+                padding: 80px 0;
+            }
+
+            .hero {
+                padding-top: 115px;
+            }
+
+            .menu-button {
+                display: block;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 74px;
+                left: 5%;
+                right: 5%;
+                display: none;
+                padding: 20px;
+                flex-direction: column;
+                align-items: flex-start;
+                border: 1px solid var(--border);
+                border-radius: 17px;
+                background: rgba(7, 16, 31, 0.98);
+                box-shadow: var(--shadow);
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .about-grid,
+            .skills-grid,
+            .credentials-grid,
+            .contact-panel {
+                grid-template-columns: 1fr;
+            }
+
+            .case-study {
+                padding: 28px 22px;
+            }
+
+            .case-study-header {
+                flex-direction: column;
+            }
+
+            .contact-panel {
+                padding: 35px 25px;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .hero h1 {
+                font-size: 2.7rem;
+            }
+
+            .metrics,
+            .outcomes-grid,
+            .case-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .metric {
+                border-right: none !important;
+                border-bottom: 1px solid var(--border);
+            }
+
+            .metric:last-child {
+                border-bottom: none;
+            }
+
+            .button {
+                width: 100%;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+
+            .reveal {
+                opacity: 1;
+                transform: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<nav class="navbar">
-<div class="nav-container">
-<div class="logo">Humaira Aijaz</div>
+    <nav class="navbar">
+        <div class="container nav-container">
 
-<div class="nav-links">
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#experience">Experience</a>
-<a href="#certifications">Certifications</a>
-<a href="#contact">Contact</a>
-</div>
-</div>
-</nav>
+            <a href="#home" class="logo">
+                Humaira<span>.</span>
+            </a>
 
-<section class="hero">
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
 
-<div class="hero-content hidden">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#delivery">Delivery</a></li>
+                <li><a href="#outcomes">Outcomes</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-<h1>Hi, I'm <span>Humaira Aijaz</span></h1>
+        </div>
+    </nav>
 
-<p>
-Cloud Delivery Manager | Technical Program Manager | Cloud Transformation Leader
-<br><br>
-13+ Years of Experience Delivering Enterprise Cloud Programs across Banking,
-FinTech, Healthcare and Government sectors.
-</p>
+    <main>
 
-<a href="#contact" class="btn">Let's Connect</a>
+        <section class="hero" id="home">
+            <div class="container">
 
-</div>
+                <div class="hero-grid">
 
-</section>
+                    <div class="hero-copy reveal">
 
-<section id="about">
+                        <p class="eyebrow">
+                            Senior Technical Program Manager
+                        </p>
 
-<h2 class="section-title hidden">About Me</h2>
+                        <h1>
+                            I lead
+                            <span class="gradient-text">
+                                Data & AI Platform Delivery
+                            </span>
+                            from strategy to production.
+                        </h1>
 
-<div class="glass about-card hidden">
+                        <p class="hero-description">
+                            Technical program leader with 13+ years of experience
+                            connecting business strategy, architecture, engineering,
+                            security, data governance and operations to deliver
+                            complex enterprise technology programs.
+                        </p>
 
-<p>
+                        <div class="specialization-list">
+                            <span>Data Platform Modernization</span>
+                            <span>GenAI & RAG Delivery</span>
+                            <span>MLOps & LLMOps Governance</span>
+                            <span>Cloud & DevSecOps Enablement</span>
+                        </div>
 
-Experienced Senior Program Manager with expertise in AWS, Azure, Cloud Migration,
-Platform Engineering, DevOps Transformation, Infrastructure Modernization and
-Enterprise Program Delivery.
+                        <div class="hero-buttons">
 
-Successfully led multi-million-dollar cloud transformation programs,
-managed global engineering teams, and delivered highly available platforms
-with measurable business outcomes including cost optimization, operational
-excellence, and automation.
+                            <a
+                                href="#portfolio"
+                                class="button button-primary"
+                            >
+                                View Delivery Portfolio
+                            </a>
 
-</p>
+                            <a
+                                href="https://linkedin.com/in/humaira369"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="button button-secondary"
+                            >
+                                LinkedIn Profile
+                            </a>
 
-</div>
+                        </div>
 
-</section>
+                    </div>
 
-<section id="skills">
+                    <div class="profile-area reveal">
 
-<h2 class="section-title hidden">Core Expertise</h2>
+                        <div class="profile-card">
 
-<div class="skills-grid">
+                            <img
+                                src="profile.jpg"
+                                alt="Professional portrait of Humaira"
+                                class="profile-photo"
+                                width="720"
+                                height="747"
+                            >
 
-<div class="glass skill-card hidden">
-<h3>Cloud Transformation</h3>
-<p>AWS, Azure, Migration Strategy, Landing Zones, Modernization</p>
-</div>
+                            <div class="profile-caption">
+                                <strong>Humaira</strong>
+                                <span>
+                                    Senior Technical Program Manager
+                                </span>
+                            </div>
 
-<div class="glass skill-card hidden">
-<h3>Program Leadership</h3>
-<p>Portfolio Management, Governance, Budget Management, Agile Delivery</p>
-</div>
+                        </div>
 
-<div class="glass skill-card hidden">
-<h3>DevOps & Automation</h3>
-<p>Terraform, Bicep, CI/CD, GitHub Actions, Azure DevOps</p>
-</div>
+                    </div>
 
-<div class="glass skill-card hidden">
-<h3>Containers & Kubernetes</h3>
-<p>Docker, Kubernetes, AKS, EKS, DevSecOps</p>
-</div>
+                </div>
 
-<div class="glass skill-card hidden">
-<h3>Data Platforms</h3>
-<p>Databricks, Data Lakes, Analytics Platforms</p>
-</div>
+                <div class="metrics reveal">
 
-<div class="glass skill-card hidden">
-<h3>Operations & Reliability</h3>
-<p>CloudWatch, Azure Monitor, Incident Management, FinOps</p>
-</div>
+                    <div class="metric">
+                        <strong>13+</strong>
+                        <span>Years of delivery leadership</span>
+                    </div>
 
-</div>
+                    <div class="metric">
+                        <strong>20+</strong>
+                        <span>User groups successfully transitioned</span>
+                    </div>
 
-</section>
+                    <div class="metric">
+                        <strong>35%</strong>
+                        <span>Improvement in approval turnaround</span>
+                    </div>
 
-<section id="experience">
+                    <div class="metric">
+                        <strong>95%</strong>
+                        <span>Defects resolved before cutover</span>
+                    </div>
 
-<h2 class="section-title hidden">Professional Experience</h2>
+                </div>
 
-<div class="timeline">
+            </div>
+        </section>
 
-<div class="timeline-item">
-<div class="glass timeline-content hidden">
-<h3>CIBC</h3>
-<h4>Enterprise Cloud Delivery Manager</h4>
-<p>
-Led enterprise cloud modernization across AWS and Azure,
-managed 20+ engineers and 50+ stakeholders.
-</p>
-</div>
-</div>
+        <section id="about">
+            <div class="container">
 
-<div class="timeline-item">
-<div class="glass timeline-content hidden">
-<h3>Community Living Cambridge</h3>
-<h4>Technology Delivery Manager</h4>
-<p>
-Led digital transformation initiatives and cloud adoption programs.
-</p>
-</div>
-</div>
+                <div class="section-heading reveal">
+                    <span class="label">Professional Profile</span>
 
-<div class="timeline-item">
-<div class="glass timeline-content hidden">
-<h3>Better.com</h3>
-<h4>Cloud Delivery Lead</h4>
-<p>
-Managed enterprise cloud programs, DevOps enablement and Agile delivery.
-</p>
-</div>
-</div>
+                    <h2>
+                        Connecting strategy, architecture and delivery
+                    </h2>
 
-<div class="timeline-item">
-<div class="glass timeline-content hidden">
-<h3>Elico Healthcare Project</h3>
-<h4>Senior Project Lead</h4>
-<p>
-Delivered healthcare reporting and compliance initiatives.
-</p>
-</div>
-</div>
+                    <p>
+                        I lead complex technology programs by converting business
+                        objectives into governed roadmaps, delivery plans and
+                        measurable production outcomes.
+                    </p>
+                </div>
 
-</div>
+                <div class="about-grid">
 
-</section>
+                    <article class="panel about-panel reveal">
+                        <h3>What I Bring</h3>
 
-<section id="certifications">
+                        <p>
+                            My strength is managing the full delivery system—not
+                            simply tracking tasks. I coordinate product, architecture,
+                            data, platform engineering, security, testing, operations
+                            and executive stakeholders around one integrated plan.
+                        </p>
 
-<h2 class="section-title hidden">Certifications</h2>
+                        <p>
+                            I maintain visibility across dependencies, architecture
+                            decisions, non-functional requirements, risks, funding,
+                            delivery readiness, cutover and operational acceptance.
+                        </p>
+                    </article>
 
-<div class="certifications">
+                    <article class="panel about-panel reveal">
+                        <h3>Current Delivery Focus</h3>
 
-<div class="glass cert-card hidden">
-<h3>PMP</h3>
-<p>Project Management Professional</p>
-</div>
+                        <ul class="highlight-list">
+                            <li>
+                                Enterprise data and AI platform modernization
+                            </li>
 
-<div class="glass cert-card hidden">
-<h3>CSM</h3>
-<p>Certified ScrumMaster</p>
-</div>
+                            <li>
+                                GenAI and RAG use-case delivery from discovery
+                                through production
+                            </li>
 
-<div class="glass cert-card hidden">
-<h3>AWS SAA</h3>
-<p>AWS Solutions Architect Associate</p>
-</div>
+                            <li>
+                                MLOps and LLMOps lifecycle governance
+                            </li>
 
-<div class="glass cert-card hidden">
-<h3>AZ-104</h3>
-<p>Azure Administrator Associate</p>
-</div>
+                            <li>
+                                Cloud foundations, DevSecOps and platform enablement
+                            </li>
 
-</div>
+                            <li>
+                                Reliability, cost governance and measurable adoption
+                            </li>
+                        </ul>
+                    </article>
 
-</section>
+                </div>
 
-<section id="contact">
+            </div>
+        </section>
 
-<h2 class="section-title hidden">Contact</h2>
+        <section id="expertise">
+            <div class="container">
 
-<div class="glass contact-card hidden">
+                <div class="section-heading reveal">
+                    <span class="label">Core Expertise</span>
 
-<h3>Let's Connect</h3>
+                    <h2>
+                        Technical delivery capabilities
+                    </h2>
 
-<p>📧 humaira86ajaz@gmail.com</p>
+                    <p>
+                        The focus is not on listing technologies—it is on showing
+                        how architecture, governance and engineering work together
+                        to produce reliable business outcomes.
+                    </p>
+                </div>
 
-<p>📱 +91-7042754768</p>
+                <div class="skills-grid">
 
-<p>🔗 linkedin.com/in/humaira369</p>
+                    <article class="panel skill-card reveal">
+                        <div class="skill-number">01</div>
 
-</div>
+                        <h3>Data Platform Modernization</h3>
 
-</section>
+                        <p>
+                            Data ingestion, lakehouse delivery, pipelines, data
+                            quality, lineage, ownership, access controls and
+                            analytics enablement.
+                        </p>
+                    </article>
 
-<footer>
-© 2026 Humaira Aijaz | Cloud Delivery Manager
-</footer>
+                    <article class="panel skill-card reveal">
+                        <div class="skill-number">02</div>
 
-<script>
+                        <h3>GenAI & RAG Delivery</h3>
 
-const observer = new IntersectionObserver((entries)=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-entry.target.classList.add('show');
-}
-});
-});
+                        <p>
+                            Use-case discovery, knowledge ingestion, chunking,
+                            embeddings, vector retrieval, prompt orchestration,
+                            evaluation, guardrails and production readiness.
+                        </p>
+                    </article>
 
-document.querySelectorAll('.hidden').forEach((el)=>{
-observer.observe(el);
-});
+                    <article class="panel skill-card reveal">
+                        <div class="skill-number">03</div>
 
-</script>
+                        <h3>MLOps & LLMOps Governance</h3>
+
+                        <p>
+                            Model and prompt versioning, automated evaluation,
+                            approval gates, deployment controls, monitoring,
+                            feedback and continuous improvement.
+                        </p>
+                    </article>
+
+                    <article class="panel skill-card reveal">
+                        <div class="skill-number">04</div>
+
+                        <h3>Cloud & DevSecOps Enablement</h3>
+
+                        <p>
+                            Cloud foundations, infrastructure as code, CI/CD,
+                            automated security controls, environment governance,
+                            deployment gates and rollback readiness.
+                        </p>
+                    </article>
+
+                    <article class="panel skill-card reveal">
+                        <div class="skill-number">05</div>
+
+                        <h3>Reliability & FinOps</h3>
+
+                        <p>
+                            Availability, performance, observability, incident
+                            readiness, disaster recovery, capacity planning,
+                            cost visibility and optimization.
+                        </p>
+                    </article>
+
+                    <article class="panel skill-card reveal">
+                        <div class="skill-number">06</div>
+
+                        <h3>Technical Program Leadership</h3>
+
+                        <p>
+                            Program roadmaps, dependency management, architecture
+                            governance, RAID leadership, budgets, executive
+                            reporting and cross-functional delivery.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="delivery">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="label">Delivery Framework</span>
+
+                    <h2>
+                        How I take a platform from idea to production
+                    </h2>
+                </div>
+
+                <div class="delivery-flow">
+
+                    <article class="panel delivery-step reveal">
+                        <div class="step-number">1</div>
+
+                        <h3>Discover</h3>
+
+                        <p>
+                            Business problem, users, value, current state,
+                            risks and success measures.
+                        </p>
+                    </article>
+
+                    <article class="panel delivery-step reveal">
+                        <div class="step-number">2</div>
+
+                        <h3>Design</h3>
+
+                        <p>
+                            Architecture, data flow, security, NFRs,
+                            interfaces and delivery model.
+                        </p>
+                    </article>
+
+                    <article class="panel delivery-step reveal">
+                        <div class="step-number">3</div>
+
+                        <h3>Plan</h3>
+
+                        <p>
+                            Roadmap, funding, teams, dependencies,
+                            milestones, RAID and governance.
+                        </p>
+                    </article>
+
+                    <article class="panel delivery-step reveal">
+                        <div class="step-number">4</div>
+
+                        <h3>Deliver</h3>
+
+                        <p>
+                            Build, integrate, test, evaluate,
+                            automate and control releases.
+                        </p>
+                    </article>
+
+                    <article class="panel delivery-step reveal">
+                        <div class="step-number">5</div>
+
+                        <h3>Operate</h3>
+
+                        <p>
+                            Cutover, adoption, monitoring, support,
+                            cost control and continuous improvement.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="outcomes">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="label">Selected Outcomes</span>
+
+                    <h2>
+                        Delivery measured through evidence
+                    </h2>
+                </div>
+
+                <div class="outcomes-grid">
+
+                    <article class="panel outcome-card reveal">
+                        <strong>70–80%</strong>
+
+                        <h3>Less Manual Effort</h3>
+
+                        <p>
+                            Automated approval and tracking workflows to reduce
+                            manual coordination and improve delivery visibility.
+                        </p>
+                    </article>
+
+                    <article class="panel outcome-card reveal">
+                        <strong>35%</strong>
+
+                        <h3>Faster Turnaround</h3>
+
+                        <p>
+                            Improved governance, ownership and workflow
+                            transparency across approval and onboarding activities.
+                        </p>
+                    </article>
+
+                    <article class="panel outcome-card reveal">
+                        <strong>75%</strong>
+
+                        <h3>Better Traceability</h3>
+
+                        <p>
+                            Strengthened requirement, approval, dependency and
+                            evidence traceability across the delivery lifecycle.
+                        </p>
+                    </article>
+
+                    <article class="panel outcome-card reveal">
+                        <strong>100%</strong>
+
+                        <h3>Audit Readiness</h3>
+
+                        <p>
+                            Established controlled evidence, accountability and
+                            governance practices supporting successful audit outcomes.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="label">Applied Portfolio</span>
+
+                    <h2>
+                        Enterprise GenAI support platform
+                    </h2>
+
+                    <p>
+                        A practical delivery architecture demonstrating how a
+                        governed RAG solution progresses from business need to
+                        monitored production service.
+                    </p>
+                </div>
+
+                <article class="panel case-study reveal">
+
+                    <div class="case-study-header">
+
+                        <div>
+                            <h3>
+                                RAG-first assistant with controlled
+                                agentic capabilities
+                            </h3>
+
+                            <p>
+                                The platform retrieves approved enterprise
+                                information, grounds the model response in verified
+                                sources and introduces controlled actions only after
+                                identity, authorization, audit and human-approval
+                                requirements are satisfied.
+                            </p>
+                        </div>
+
+                        <span class="status">Delivery Focus</span>
+
+                    </div>
+
+                    <div class="case-grid">
+
+                        <div class="case-item">
+                            <span>Business Layer</span>
+
+                            <p>
+                                Use case, target users, expected value,
+                                service ownership and measurable KPIs.
+                            </p>
+                        </div>
+
+                        <div class="case-item">
+                            <span>Knowledge Layer</span>
+
+                            <p>
+                                Approved documents, ingestion, chunking,
+                                metadata, embeddings and vector index.
+                            </p>
+                        </div>
+
+                        <div class="case-item">
+                            <span>AI Layer</span>
+
+                            <p>
+                                Retrieval, prompt construction, model response,
+                                citations, evaluation and guardrails.
+                            </p>
+                        </div>
+
+                        <div class="case-item">
+                            <span>Operations Layer</span>
+
+                            <p>
+                                CI/CD, access controls, monitoring, feedback,
+                                incident response and cost governance.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="tools-list">
+                        <h4>Relevant Platforms and Tools</h4>
+
+                        <div>
+                            <span>Azure OpenAI</span>
+                            <span>Azure AI Search</span>
+                            <span>Azure AI Foundry</span>
+                            <span>Azure Data Lake Storage</span>
+                            <span>Azure Databricks</span>
+                            <span>Azure Data Factory</span>
+                            <span>Microsoft Purview</span>
+                            <span>Azure Machine Learning</span>
+                            <span>AKS</span>
+                            <span>Terraform</span>
+                            <span>Azure DevOps</span>
+                            <span>GitHub Actions</span>
+                            <span>Key Vault</span>
+                            <span>Azure Monitor</span>
+                        </div>
+                    </div>
+
+                </article>
+
+            </div>
+        </section>
+
+        <section id="credentials">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="label">Leadership Foundation</span>
+
+                    <h2>
+                        Program, platform and delivery governance
+                    </h2>
+                </div>
+
+                <div class="credentials-grid">
+
+                    <article class="panel credential reveal">
+                        <h3>Program Management</h3>
+
+                        <p>
+                            Integrated roadmaps, financial governance, executive
+                            communication, dependency management, risks, decisions
+                            and delivery assurance.
+                        </p>
+                    </article>
+
+                    <article class="panel credential reveal">
+                        <h3>Agile Delivery</h3>
+
+                        <p>
+                            Cross-functional planning, backlog governance,
+                            release coordination, iterative delivery, metrics
+                            and continuous improvement.
+                        </p>
+                    </article>
+
+                    <article class="panel credential reveal">
+                        <h3>Technical Governance</h3>
+
+                        <p>
+                            Architecture decisions, security controls, NFRs,
+                            quality gates, operational readiness, observability
+                            and acceptance evidence.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+
+                <div class="panel contact-panel reveal">
+
+                    <div>
+                        <span class="eyebrow">
+                            Let’s Connect
+                        </span>
+
+                        <h2>
+                            Building reliable Data and AI platforms
+                        </h2>
+
+                        <p>
+                            Open to senior technical program and platform delivery
+                            opportunities focused on Data, AI, GenAI, Cloud and
+                            enterprise transformation.
+                        </p>
+                    </div>
+
+                    <div class="contact-links">
+
+                        <a href="mailto:humaira86ajaz@gmail.com">
+                            Email: humaira86ajaz@gmail.com
+                        </a>
+
+                        <a href="tel:+917042754768">
+                            Phone: +91 70427 54768
+                        </a>
+
+                        <a
+                            href="https://linkedin.com/in/humaira369"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn: linkedin.com/in/humaira369
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            © 2026 Humaira · Senior Technical Program Manager ·
+            Data & AI Platform Delivery
+        </div>
+    </footer>
+
+    <script>
+        const menuButton = document.getElementById("menuButton");
+        const navLinks = document.getElementById("navLinks");
+
+        menuButton.addEventListener("click", function () {
+            const isOpen = navLinks.classList.toggle("open");
+
+            menuButton.setAttribute(
+                "aria-expanded",
+                String(isOpen)
+            );
+
+            menuButton.textContent = isOpen ? "✕" : "☰";
+        });
+
+        navLinks.addEventListener("click", function (event) {
+            if (event.target.matches("a")) {
+                navLinks.classList.remove("open");
+                menuButton.setAttribute("aria-expanded", "false");
+                menuButton.textContent = "☰";
+            }
+        });
+
+        const reduceMotion = window.matchMedia(
+            "(prefers-reduced-motion: reduce)"
+        ).matches;
+
+        if (
+            reduceMotion ||
+            !("IntersectionObserver" in window)
+        ) {
+            document
+                .querySelectorAll(".reveal")
+                .forEach(function (element) {
+                    element.classList.add("visible");
+                });
+        } else {
+            const observer = new IntersectionObserver(
+                function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("visible");
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },
+                {
+                    threshold: 0.12
+                }
+            );
+
+            document
+                .querySelectorAll(".reveal")
+                .forEach(function (element) {
+                    observer.observe(element);
+                });
+        }
+    </script>
 
 </body>
-</html>sample purpose
+</html>
